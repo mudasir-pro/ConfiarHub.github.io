@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 1080px;
+			height: 400px;
+			border: 1px solid;
+		}
+	</style>
+</head>
+<style type="text/css">
+		.div{
+			width: 1080px;
+			height: 400px;
+			border: 1px solid;
+		}
+	</style>
+<body onload="ponka()">
+<script type="text/javascript">
+	function ponka()
+	{
+		alert("chal beta nikal");
+	}
+	function Ponka()
+	{
+		alert("Aby bola na nikal");
+	}
+	function pOnka()
+	{
+		alert("aby samj nhi ati nikal beta")
+	}
+	function down(a)
+	{
+		a.style.color="green";
+	}
+	function up(a)
+	{
+		a.style.color="red";
+	}
+	function over(a)
+	{
+       a.style.color="blue";
+	}
+	function out(a)
+	{
+       a.style.color="black";
+	}
+	function move(a){
+		var x=a.clientX;
+		var y=a.clientY;
+		var z= "Coordinates: ("+ x +" , "+ y +")";
+		document.getElementById("box").innerHTML=z;
+	}
+</script>
+  <input type="button" name="Click me" value="Click me" onclick="Ponka()">
+  <input type="button" name="Click me" value="Please Click me" onclick="pOnka()">
+  <h1 onmousedown="down(this)" onmouseup="up(this)">MOUSE DOWN OR UP</h1>
+  <h1 onmouseover="over(this)" onmouseout="out(this)">MOUSE OVER OR OUT </h1>
+  <div id="box" onmousemove="move(event)"></div>
+</body>
+</html>
